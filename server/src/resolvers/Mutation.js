@@ -13,7 +13,6 @@ async function post(parent, args, context, info) {
     }
   });
   context.pubsub.publish('NEW_LINK', newLink);
-  console.log(newLink)
   return newLink;
 }
 
